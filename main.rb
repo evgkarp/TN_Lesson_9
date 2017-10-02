@@ -239,6 +239,8 @@ class Main
     end
     train.add_wagon(wagon)
     puts "К поезду номер #{train.number} прицеплен вагон"
+  rescue => e
+    puts e.message
   end
 
   def create_passenger_wagon
